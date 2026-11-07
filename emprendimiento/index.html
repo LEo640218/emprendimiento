@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpintech 3D | Modelador 3D y Software de Gestión para Carpintería</title>
+  <meta name="description"
+    content="Carpintech: La aplicación móvil para carpinteros y diseñadores de muebles. Modela en 3D, genera despieces automáticos, controla la producción de tu taller y gestiona pedidos y cobranzas.">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/jpeg" href="./assets/logo-carpintech.jpeg">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       HERO CONTAINER (Estilo Verde Oliva / Sage inspirado en "simply furniture")
+       ========================================================================== -->
+  <div class="hero-wrapper" id="hero">
+
+    <!-- Barra de Navegación Superior -->
+    <header class="main-header">
+      <a href="#hero" class="brand-logo-wrap" title="Carpintech 3D Inicio">
+        <img src="./assets/LG.jpeg" alt="Carpintech 3D Logo" class="brand-official-logo">
+        <div class="brand-text-block">
+          <span class="brand-name-text">carpintech</span>
+          <span class="brand-slogan-text">Diseña • Visualiza • Fabrica</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegación principal">
+        <a href="#como-funciona" class="nav-link">¿Cómo Funciona?</a>
+        <a href="#pantallas-app" class="nav-link">Pantallas de la App</a>
+        <a href="#galeria-capturas" class="nav-link">Galería HD</a>
+        <a href="#simulador-3d" class="nav-link">Simulador 3D</a>
+        <a href="#planes" class="nav-link">Precios</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-playstore-nav" onclick="openPlayStoreModal()" title="Descargar en Play Store">
+          <svg class="play-icon" viewBox="0 0 24 24" width="20" height="20" fill="none">
+            <path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1z" fill="#00E676" />
+            <path d="M16.9 15.5l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.3l-3.9 2.2-.1-.1z" fill="#FFD600" />
+            <path d="M13.6 12L3.6 22.1c.4.4 1 .4 1.7 0l11.7-6.6-3.4-3.5z" fill="#FF3D00" />
+            <path d="M13.6 12L17 8.5 5.3 1.9C4.6 1.5 4 1.5 3.6 1.9L13.6 12z" fill="#00B0FF" />
+          </svg>
+          <span>Descárgalo en Play Store</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Contenido Principal del Hero Banner -->
+    <div class="hero-content-grid">
+
+      <!-- Escenario Central: Título Gigante "carpintech" + Sillón/Mueble 3D de alta gama -->
+      <div class="hero-main-stage">
+        <div class="hero-giant-title">carpintech</div>
+        <div class="hero-subtitle-tag">
+          <span>modelador 3d</span>
+          <span style="font-weight:400; opacity:0.6;">// gestión de taller</span>
+        </div>
+
+        <!-- Imagen principal central enmarcada orgánicamente con teléfono flotante de la App -->
+        <div class="hero-showcase-center">
+          <div class="hero-showcase-pill-frame">
+            <img src="./assets/furniture/hero-armchair.jpg" alt="Mueble de diseño 3D Carpintech"
+              class="hero-featured-image">
+          </div>
+
+          <!-- Celular flotante mostrando la pantalla real del modelador 3D de la app -->
+          <div class="hero-floating-phone-badge"
+            onclick="document.getElementById('pantallas-app').scrollIntoView({behavior:'smooth'})"
+            title="Ver pantalla 3D en grande">
+            <img src="./assets/app-screens/02-modelador-3d.jpeg" alt="Modelador 3D en celular">
+            <div class="phone-badge-caption">App en vivo 📱</div>
+          </div>
+
+          <!-- Badge flotante de modelo 3D activo -->
+          <div class="hero-floating-badge">
+            <div class="pulse-dot"></div>
+            <span>App 3D para carpintería moderna</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Lateral Derecha con las Capturas REALES de la App en grande -->
+      <aside class="hero-side-cards-column">
+
+        <div class="hero-mini-card"
+          onclick="document.getElementById('pantallas-app').scrollIntoView({behavior:'smooth'})">
+          <div class="hero-mini-thumb">
+            <img src="./assets/app-screens/02-modelador-3d.jpeg" alt="Escritorio 3D - 13 Piezas"
+              class="zoomable-screen">
+          </div>
+          <span class="hero-mini-title">Modelador 3D</span>
+          <span class="hero-mini-sub">13 piezas • Táctil en cm</span>
+        </div>
+
+        <div class="hero-mini-card"
+          onclick="document.getElementById('pantallas-app').scrollIntoView({behavior:'smooth'})">
+          <div class="hero-mini-thumb">
+            <img src="./assets/app-screens/03-produccion.jpeg" alt="Control de Producción" class="zoomable-screen">
+          </div>
+          <span class="hero-mini-title">Control de Taller</span>
+          <span class="hero-mini-sub">Corte, Armado, Acabado</span>
+        </div>
+
+        <div class="hero-mini-card"
+          onclick="document.getElementById('pantallas-app').scrollIntoView({behavior:'smooth'})">
+          <div class="hero-mini-thumb">
+            <img src="./assets/app-screens/05-reportes.jpeg" alt="Finanzas y Reportes" class="zoomable-screen">
+          </div>
+          <span class="hero-mini-title">Cobranzas en Bs</span>
+          <span class="hero-mini-sub">Ventas, abonos y saldos</span>
+        </div>
+
+        <a href="#pantallas-app" class="btn-hero-side-more">
+          <span>Ver todas las pantallas</span>
+          <span>→</span>
+        </a>
+      </aside>
+
+    </div>
+
+    <!-- Barra Inferior del Hero con Tagline y Botones de Acción -->
+    <div class="hero-bottom-bar">
+      <p class="hero-bottom-tagline">
+        Diseña muebles a medida en 3D desde tu celular, obtén listas de corte exactas y controla las entregas de tu
+        taller sin papeleo.
+      </p>
+
+      <div class="hero-bottom-cta-group">
+        <button class="btn-playstore-hero" onclick="openPlayStoreModal()">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none">
+            <path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1z" fill="#00E676" />
+            <path d="M16.9 15.5l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.3l-3.9 2.2-.1-.1z" fill="#FFD600" />
+            <path d="M13.6 12L3.6 22.1c.4.4 1 .4 1.7 0l11.7-6.6-3.4-3.5z" fill="#FF3D00" />
+            <path d="M13.6 12L17 8.5 5.3 1.9C4.6 1.5 4 1.5 3.6 1.9L13.6 12z" fill="#00B0FF" />
+          </svg>
+          <div class="playstore-badge-text">
+            <span class="sub">DISPONIBLE EN</span>
+            <span class="main">Google Play Store</span>
+          </div>
+        </button>
+        <a href="#pantallas-app" class="btn-pill-secondary">
+          <span>Ver Pantallas Reales</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==========================================================================
+       SECCIÓN CREMA: CÓMO FUNCIONA LA APP & COLECCIÓN DE MÓDULOS
+       (Fiel al bloque editorial crema de la imagen de referencia)
+       ========================================================================== */
+  <section class="section-features-cream" id="como-funciona">
+    <div class="container">
+      
+      <!-- Encabezado Editorial Asimétrico con Tipografía Gruesa -->
+  <div class="editorial-header-split">
+    <h1 class="editorial-title-chunky">
+      Simplificando la carpintería con diseño 3D y control total
+    </h1>
+    <p class="editorial-subtext">
+      Creamos más que una simple aplicación para tomar notas. Diseñamos <strong>Carpintech</strong> para ser el
+      asistente digital integral de tu taller: modelado tridimensional intuitivo, despiece milimétrico, seguimiento de
+      operarios y control de cobros. Todo para que trabajes con tranquilidad y multipliques tus ingresos.
+    </p>
+  </div>
+
+  <!-- Banner de Colección / Modeler Highlight (Estilo "Meet simple&soft collection") -->
+  <div class="featured-collection-banner" id="modulos">
+    <div class="banner-img-rounded">
+      <img src="./assets/furniture/collection-desk.jpg" alt="Modelador 3D de Escritorios">
+    </div>
+    <div class="banner-info-content">
+      <h3>Conoce el ecosistema Carpintech 3D</h3>
+      <p>Explora cómo cada función de la aplicación se conecta en tiempo real entre el diseño, el maestro carpintero y
+        el cliente final.</p>
+      <div class="banner-stats-pill-row">
+        <span class="stat-pill">📐 100% Medidas Reales en cm/mm</span>
+        <span class="stat-pill">🪚 Optimización de Planchas de Melamina</span>
+        <span class="stat-pill">📱 Compatible con cualquier Teléfono Android / iOS</span>
+        <span class="stat-pill">💬 Notificaciones WhatsApp con un Clic</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grilla de 3 Tarjetas con bordes ultra-redondeados y botón "Shop ->" / "Ver ->" -->
+  <div class="cards-collection-grid">
+
+    <!-- Tarjeta 1: Modelado 3D -->
+    <article class="collection-card-item">
+      <div class="card-img-container">
+        <img src="./assets/app-screens/02-modelador-3d.jpeg" alt="Modelador 3D Táctil" class="zoomable-screen"
+          title="Clic para ampliar en alta resolución">
+        <span class="card-badge-top">MODELADOR 3D</span>
+      </div>
+      <div class="card-content-foot">
+        <div class="card-title-group">
+          <h4>Diseño y Despiece</h4>
+          <p>13 piezas • Escala en cm</p>
+        </div>
+        <a href="#pantallas-app" class="btn-card-action-pill">
+          <span>Explorar</span>
+          <span>→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Tarjeta 2: Producción y Maestros Carpinteros -->
+    <article class="collection-card-item">
+      <div class="card-img-container">
+        <img src="./assets/app-screens/03-produccion.jpeg" alt="Control de Producción" class="zoomable-screen"
+          title="Clic para ampliar en alta resolución">
+        <span class="card-badge-top">TALLER ACTIVO</span>
+      </div>
+      <div class="card-content-foot">
+        <div class="card-title-group">
+          <h4>Control de Producción</h4>
+          <p>Corte, Armado y Acabado</p>
+        </div>
+        <a href="#pantallas-app" class="btn-card-action-pill">
+          <span>Gestionar</span>
+          <span>→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Tarjeta 3: Finanzas y Cobranzas -->
+    <article class="collection-card-item">
+      <div class="card-img-container">
+        <img src="./assets/app-screens/05-reportes.jpeg" alt="Reportes Económicos" class="zoomable-screen"
+          title="Clic para ampliar en alta resolución">
+        <span class="card-badge-top">FINANZAS & BS</span>
+      </div>
+      <div class="card-content-foot">
+        <div class="card-title-group">
+          <h4>Reportes y Cobranzas</h4>
+          <p>Ventas y saldos pendientes</p>
+        </div>
+        <a href="#pantallas-app" class="btn-card-action-pill">
+          <span>Finanzas</span>
+          <span>→</span>
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+  </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: RECORRIDO INTERACTIVO POR LAS PANTALLAS DE LA APP
+       (Demuestra exactamente cómo funciona cada pantalla de la app)
+       ========================================================================== -->
+  <section class="section-app-walkthrough" id="pantallas-app">
+    <div class="container">
+
+      <div class="section-title-center">
+        <span class="section-tag-pill sage">La App en Acción</span>
+        <h2 class="editorial-title-chunky" style="font-size:clamp(2rem, 3.5vw, 3rem);">
+          Diseñada para el taller de hoy, pensada para la pantalla táctil
+        </h2>
+        <p class="editorial-subtext" style="margin-top:12px;">
+          Haz clic en cada módulo para ver las capturas reales de la aplicación móvil y descubrir cómo resuelve los
+          desafíos diarios de tu carpintería.
+        </p>
+      </div>
+
+      <div class="walkthrough-container">
+
+        <!-- Mockup de Smartphone Realista -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-device-frame">
+            <div class="phone-speaker-notch"></div>
+            <div class="phone-screen-display">
+              <img id="phoneMockupImg" src="./assets/app-screens/01-inicio-taller.jpeg"
+                alt="Carpintech App Pantalla Inicial" class="phone-screen-img zoomable-screen"
+                title="Clic para ampliar">
+            </div>
+          </div>
+        </div>
+
+        <!-- Lista Interactiva de Pestañas de Pantallas -->
+        <div class="walkthrough-tabs-list">
+
+          <!-- Tab 1: Inicio -->
+          <div class="app-screen-tab-btn active" data-screen="inicio">
+            <div class="tab-icon-box">🏠</div>
+            <div class="tab-text-info">
+              <h4>1. Inicio y Panel Central del Taller</h4>
+              <p>Gestiona tu taller (como Muebles Oscarín - ID: CARP-3847), visualiza tu equipo de trabajo, pedidos
+                activos y accesos directos.</p>
+              <span class="tab-meta-badge">Dashboard Rápido</span>
+            </div>
+          </div>
+
+          <!-- Tab 2: Modelador 3D -->
+          <div class="app-screen-tab-btn" data-screen="3d">
+            <div class="tab-icon-box">🧊</div>
+            <div class="tab-text-info">
+              <h4>2. Modelador 3D Interactivo y Despiece</h4>
+              <p>Diseña muebles paramétricos (como el Escritorio Gamer de 13 piezas). Rota la vista 360°, toca piezas
+                para editar y obtén medidas exactas.</p>
+              <span class="tab-meta-badge">Diseña y Visualiza</span>
+            </div>
+          </div>
+
+          <!-- Tab 3: Producción -->
+          <div class="app-screen-tab-btn" data-screen="produccion">
+            <div class="tab-icon-box">🔨</div>
+            <div class="tab-text-info">
+              <h4>3. Seguimiento de Producción en Vivo</h4>
+              <p>Asigna cada mueble a maestros carpinteros (como Simei Calle). Monitorea el progreso por etapas: Corte,
+                Armado, Acabado y Entrega al 100%.</p>
+              <span class="tab-meta-badge">Cero Retrasos</span>
+            </div>
+          </div>
+
+          <!-- Tab 4: Pedidos -->
+          <div class="app-screen-tab-btn" data-screen="pedidos">
+            <div class="tab-icon-box">📦</div>
+            <div class="tab-text-info">
+              <h4>4. Control de Pedidos y Cotizaciones</h4>
+              <p>Cotiza proyectos en tu moneda local (Ej. Juego de Comedor por Bs 5,000) y avisa el estado directamente
+                por WhatsApp al cliente.</p>
+              <span class="tab-meta-badge">Cotizaciones Ágiles</span>
+            </div>
+          </div>
+
+          <!-- Tab 5: Reportes -->
+          <div class="app-screen-tab-btn" data-screen="reportes">
+            <div class="tab-icon-box">📊</div>
+            <div class="tab-text-info">
+              <h4>5. Resumen Económico y Cuentas por Cobrar</h4>
+              <p>Sabe con exactitud cuánto vendiste, cuánto has cobrado y qué saldos quedan pendientes para nunca perder
+                dinero.</p>
+              <span class="tab-meta-badge">Finanzas Claras</span>
+            </div>
+          </div>
+
+          <!-- Tab 6: Clientes -->
+          <div class="app-screen-tab-btn" data-screen="clientes">
+            <div class="tab-icon-box">👥</div>
+            <div class="tab-text-info">
+              <h4>6. Directorio de Clientes y Comunicación</h4>
+              <p>Guarda tus clientes frecuentes con un botón directo para llamar o abrir chat de WhatsApp con un solo
+                toque.</p>
+              <span class="tab-meta-badge">Fidelización de Clientes</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: GALERÍA DE PANTALLAS EN ALTA DEFINICIÓN (IMÁGENES GRANDES DE LA APP)
+       ========================================================================== -->
+  <section class="section-screens-gallery" id="galeria-capturas">
+    <div class="container">
+
+      <div class="section-title-center">
+        <span class="section-tag-pill sage">Todas las Vistas de la App</span>
+        <h2 class="editorial-title-chunky" style="font-size:clamp(2rem, 3.8vw, 3.2rem);">
+          Conoce cada detalle de Carpintech en tu teléfono
+        </h2>
+        <p class="editorial-subtext" style="margin-top:12px;">
+          Haz clic en cualquiera de las imágenes para ampliarla en pantalla completa y ver cómo la app organiza tu
+          taller de carpintería.
+        </p>
+      </div>
+
+      <div class="gallery-grid-six">
+
+        <!-- Pantalla 1 -->
+        <div class="gallery-card-item">
+          <div class="gallery-card-frame">
+            <img src="./assets/app-screens/01-inicio-taller.jpeg" alt="Inicio del Taller" class="zoomable-screen"
+              title="Clic para ampliar en alta resolución">
+            <span class="gallery-zoom-hint">🔍 Clic para ampliar</span>
+          </div>
+          <div class="gallery-card-caption">
+            <h4>1. Inicio del Taller</h4>
+            <p>Identificador de taller (ID: CARP-3847), equipo de trabajo, pedidos rápidos y accesos principales.</p>
+          </div>
+        </div>
+
+        <!-- Pantalla 2 -->
+        <div class="gallery-card-item">
+          <div class="gallery-card-frame">
+            <img src="./assets/app-screens/02-modelador-3d.jpeg" alt="Modelador 3D con Despiece" class="zoomable-screen"
+              title="Clic para ampliar en alta resolución">
+            <span class="gallery-zoom-hint">🔍 Clic para ampliar</span>
+          </div>
+          <div class="gallery-card-caption">
+            <h4>2. Modelador 3D Táctil</h4>
+            <p>Diseño de mueble (Escritorio Gamer con 13 piezas). Medidas en cm, rotación orbital y despiece.</p>
+          </div>
+        </div>
+
+        <!-- Pantalla 3 -->
+        <div class="gallery-card-item">
+          <div class="gallery-card-frame">
+            <img src="./assets/app-screens/03-produccion.jpeg" alt="Control de Producción" class="zoomable-screen"
+              title="Clic para ampliar en alta resolución">
+            <span class="gallery-zoom-hint">🔍 Clic para ampliar</span>
+          </div>
+          <div class="gallery-card-caption">
+            <h4>3. Control de Producción</h4>
+            <p>Fases de Corte, Armado, Acabado, asignado a Maestro Simei Calle y botón "Ver 3D".</p>
+          </div>
+        </div>
+
+        <!-- Pantalla 4 -->
+        <div class="gallery-card-item">
+          <div class="gallery-card-frame">
+            <img src="./assets/app-screens/04-pedidos.jpeg" alt="Pedidos y Cotizaciones" class="zoomable-screen"
+              title="Clic para ampliar en alta resolución">
+            <span class="gallery-zoom-hint">🔍 Clic para ampliar</span>
+          </div>
+          <div class="gallery-card-caption">
+            <h4>4. Pedidos y Entregas</h4>
+            <p>Cotizaciones en Bolivianos (Bs 5,000), cliente, estado de entrega y aviso directo por WhatsApp.</p>
+          </div>
+        </div>
+
+        <!-- Pantalla 5 -->
+        <div class="gallery-card-item">
+          <div class="gallery-card-frame">
+            <img src="./assets/app-screens/05-reportes.jpeg" alt="Reportes Económicos" class="zoomable-screen"
+              title="Clic para ampliar en alta resolución">
+            <span class="gallery-zoom-hint">🔍 Clic para ampliar</span>
+          </div>
+          <div class="gallery-card-caption">
+            <h4>5. Reportes y Cobranzas</h4>
+            <p>Ventas totales, cobros realizados, saldos pendientes y botón rápido para registrar pagos.</p>
+          </div>
+        </div>
+
+        <!-- Pantalla 6 -->
+        <div class="gallery-card-item">
+          <div class="gallery-card-frame">
+            <img src="./assets/app-screens/06-clientes.jpeg" alt="Directorio de Clientes" class="zoomable-screen"
+              title="Clic para ampliar en alta resolución">
+            <span class="gallery-zoom-hint">🔍 Clic para ampliar</span>
+          </div>
+          <div class="gallery-card-caption">
+            <h4>6. Directorio de Clientes</h4>
+            <p>Lista de clientes con teléfono, llamada directa y chat de WhatsApp con un solo toque.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="gallery-cta-bottom">
+        <button class="btn-playstore-hero" onclick="openPlayStoreModal()">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+            <path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1z" fill="#00E676" />
+            <path d="M16.9 15.5l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.3l-3.9 2.2-.1-.1z" fill="#FFD600" />
+            <path d="M13.6 12L3.6 22.1c.4.4 1 .4 1.7 0l11.7-6.6-3.4-3.5z" fill="#FF3D00" />
+            <path d="M13.6 12L17 8.5 5.3 1.9C4.6 1.5 4 1.5 3.6 1.9L13.6 12z" fill="#00B0FF" />
+          </svg>
+          <div class="playstore-badge-text">
+            <span class="sub">INSTÁLALA EN TU DISPOSITIVO</span>
+            <span class="main">Descárgalo en Play Store (Gratis)</span>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TICKER / MARQUEE RIBBON
+       (Réplica del divisor tipográfico "SECRET COLLECTION. QUANTITY LIMITED...")
+       ========================================================================== -->
+  <div class="marquee-ribbon-divider" aria-hidden="true">
+    <div class="marquee-content-track">
+      <span>✦ CARPINTECH 3D</span>
+      <span class="accent">// DISEÑA • VISUALIZA • FABRICA //</span>
+      <span>MODELADO EN TU CELULAR</span>
+      <span class="accent">// CERO ERRORES DE CORTE //</span>
+      <span>CONTROL TOTAL DE PRODUCCIÓN</span>
+      <span class="accent">// GESTIÓN FINANCIERA EN BS //</span>
+      <span>EDICIÓN 2026 // PRUEBA GRATIS 14 DÍAS</span>
+      <span class="accent">✦ CARPINTECH 3D</span>
+      <span class="accent">// DISEÑA • VISUALIZA • FABRICA //</span>
+      <span>MODELADO EN TU CELULAR</span>
+      <span class="accent">// CERO ERRORES DE CORTE //</span>
+      <span>CONTROL TOTAL DE PRODUCCIÓN</span>
+      <span class="accent">// GESTIÓN FINANCIERA EN BS //</span>
+      <span>EDICIÓN 2026 // PRUEBA GRATIS 14 DÍAS</span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECCIÓN OSCURA ESPRESSO
+       (Inspirada en el bloque oscuro "Sit down. Lie down. Rest now." de la imagen)
+       ========================================================================== -->
+  <section class="section-dark-espresso" id="secret-features">
+    <div class="container">
+
+      <div class="espresso-editorial-header">
+        <div>
+          <span class="section-tag-pill dark">Tecnología para Fabricar</span>
+          <h2>Diseña hoy. Fabrica exacto. Crece sin límites.</h2>
+        </div>
+        <p>
+          Una herramienta creada por maestros carpinteros y desarrolladores de software 3D para llevar a los talleres
+          tradicionales al estándar de la industria 4.0 con facilidad y sin curva de aprendizaje frustrante.
+        </p>
+      </div>
+
+      <!-- Vitrina Asimétrica en Estilo Oscuro -->
+      <div class="dark-showcase-grid">
+
+        <!-- Tarjeta Grande Destacada con Detalle de Carpintería -->
+        <div class="dark-featured-card">
+          <div class="dark-featured-img-wrap">
+            <img src="./assets/furniture/hero-armchair.jpg" alt="Acabado premium de madera">
+          </div>
+          <div>
+            <h3 style="font-size:1.6rem; font-weight:800; margin-bottom:8px; color:#fff;">
+              La precisión que tus clientes merecen
+            </h3>
+            <p style="color:var(--text-light-muted); font-size:0.92rem; line-height:1.5;">
+              Olvídate de bosquejos en servilletas o errores al calcular el tapacanto. Con Carpintech tus clientes
+              aprueban el mueble en 3D antes de cortar la primera placa.
+            </p>
+          </div>
+        </div>
+
+        <!-- Trío de Tarjetas de Beneficios (Estilo Verta, Cresta, Perra de la imagen) -->
+        <div class="dark-cards-trio">
+
+          <div class="dark-mini-card">
+            <div class="thumb">
+              <img src="./assets/furniture/collection-desk.jpg" alt="Optimización de Cortes">
+            </div>
+            <h5>Ahorro de Material</h5>
+            <p>Calcula hasta un 40% más de aprovechamiento en tus placas de melamina y madera maciza.</p>
+            <span class="pill-stat">Menos Merma</span>
+          </div>
+
+          <div class="dark-mini-card">
+            <div class="thumb">
+              <img src="./assets/furniture/collection-sofa.jpg" alt="Ventas 3D Inmediatas">
+            </div>
+            <h5>Cierra Ventas 3x</h5>
+            <p>Muestra el diseño 3D interactivo en la sala de tu cliente para asegurar el anticipo en el acto.</p>
+            <span class="pill-stat">Mayor Conversión</span>
+          </div>
+
+          <div class="dark-mini-card">
+            <div class="thumb">
+              <img src="./assets/app-screens/05-reportes.jpeg" alt="Control de Cobranzas">
+            </div>
+            <h5>Cero Deudas Olvidadas</h5>
+            <p>Registro de abonos y saldos pendientes en Bs para que el dinero de tu taller siempre esté seguro.</p>
+            <span class="pill-stat">Finanzas Sanas</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ==========================================================================
+           SIMULADOR / MODELADOR 3D INTERACTIVO EN EL NAVEGADOR
+           ========================================================================== -->
+      <div class="simulator-interactive-box" id="simulador-3d">
+        <div class="simulator-header">
+          <div>
+            <span class="section-tag-pill dark">Interactivo</span>
+            <h3>Pruébalo ahora: Simulador 3D de Carpintech</h3>
+            <p style="color:var(--text-light-muted); font-size:0.9rem; margin-top:4px;">
+              Arrastra con el mouse o dedo para rotar 360°, cambia los materiales y ajusta las dimensiones en tiempo
+              real.
+            </p>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button id="btnZoomIn" class="canvas-ctrl-btn" title="Acercar">+</button>
+            <button id="btnZoomOut" class="canvas-ctrl-btn" title="Alejar">-</button>
+            <button id="btnResetView" class="canvas-ctrl-btn" title="Reiniciar Cámara">↻ Vista Inicial</button>
+          </div>
+        </div>
+
+        <div class="simulator-body-grid">
+
+          <!-- Viewport del Canvas 3D -->
+          <div class="canvas-viewport-wrap">
+            <canvas id="carpentryCanvas"></canvas>
+            <div class="canvas-controls-overlay">
+              <span class="canvas-ctrl-btn">🕹️ Arrastra para Rotar 3D</span>
+            </div>
+          </div>
+
+          <!-- Panel de Opciones y Materiales -->
+          <div class="simulator-options-panel">
+
+            <div>
+              <span class="option-group-label">1. Textura / Material del Mueble</span>
+              <div class="materials-swatch-row">
+                <button class="swatch-btn active" data-material="oak">Roble Miel</button>
+                <button class="swatch-btn" data-material="walnut">Nogal</button>
+                <button class="swatch-btn" data-material="graphite">Grafito</button>
+                <button class="swatch-btn" data-material="pine">Pino</button>
+              </div>
+            </div>
+
+            <div>
+              <span class="option-group-label">2. Ajustar Dimensiones (cm)</span>
+
+              <div class="dimension-slider-item">
+                <div class="dim-label-val">
+                  <span>Ancho total:</span>
+                  <span id="valWidth">140 cm</span>
+                </div>
+                <input type="range" id="sliderWidth" min="100" max="200" value="140" class="custom-range">
+              </div>
+
+              <div class="dimension-slider-item">
+                <div class="dim-label-val">
+                  <span>Profundidad:</span>
+                  <span id="valDepth">60 cm</span>
+                </div>
+                <input type="range" id="sliderDepth" min="45" max="90" value="60" class="custom-range">
+              </div>
+
+              <div class="dimension-slider-item">
+                <div class="dim-label-val">
+                  <span>Altura de trabajo:</span>
+                  <span id="valHeight">75 cm</span>
+                </div>
+                <input type="range" id="sliderHeight" min="65" max="95" value="75" class="custom-range">
+              </div>
+            </div>
+
+            <!-- Resumen de piezas generadas en Carpintech -->
+            <div class="pieces-summary-card">
+              <div class="title">Despiece generado en vivo:</div>
+              <div class="number" id="totalPiecesDisplay">13 piezas</div>
+              <div style="font-size:0.75rem; color:#aaa; margin-top:4px;" id="totalAreaDisplay">
+                3.15 m² melamina estimada
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: PLANES Y PROMOCIÓN ESPECIAL DE LANZAMIENTO
+       ========================================================================== -->
+  <section class="section-pricing-promo" id="planes">
+    <div class="container">
+
+      <div class="section-title-center">
+        <span class="section-tag-pill sage">Promoción Especial de Lanzamiento</span>
+        <h2 class="editorial-title-chunky">
+          Invierte en tu taller, recupera tu inversión en el primer mueble
+        </h2>
+        <p class="editorial-subtext" style="margin-top:10px;">
+          Activa tu prueba gratuita de 14 días sin compromiso. Elige el plan que mejor se adapte al tamaño de tu equipo.
+        </p>
+      </div>
+
+      <div class="pricing-cards-grid">
+
+        <!-- Plan 1: Carpintero Autónomo -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">Autónomo</h3>
+            <p class="plan-desc">Ideal para carpinteros independientes o que inician su propio taller.</p>
+          </div>
+
+          <div class="plan-price-wrap">
+            <span class="plan-price-currency">Bs</span>
+            <span class="plan-price-amount">99</span>
+            <span class="plan-price-period">/ mes</span>
+          </div>
+
+          <ul class="plan-features-list">
+            <li><span class="check">✓</span> Modelador 3D táctil ilimitado</li>
+            <li><span class="check">✓</span> Generador de listas de despiece</li>
+            <li><span class="check">✓</span> Hasta 30 proyectos activos</li>
+            <li><span class="check">✓</span> Catálogo básico de plantillas</li>
+            <li><span class="check">✓</span> Soporte por WhatsApp</li>
+          </ul>
+
+          <button onclick="openPlayStoreModal()" class="btn-pricing-action">Descárgalo en Play Store (Gratis)</button>
+        </div>
+
+        <!-- Plan 2: Taller Pro (Destacado en Espresso) -->
+        <div class="pricing-card featured">
+          <div class="featured-top-badge">MÁS ELEGIDO POR TALLERES</div>
+
+          <div class="plan-header">
+            <h3 class="plan-name">Taller Pro</h3>
+            <p class="plan-desc">La suite completa para talleres en crecimiento con operarios a cargo.</p>
+          </div>
+
+          <div class="plan-price-wrap">
+            <span class="plan-price-currency" style="color:var(--caramel-accent);">Bs</span>
+            <span class="plan-price-amount">189</span>
+            <span class="plan-price-period">/ mes</span>
+          </div>
+
+          <ul class="plan-features-list">
+            <li><span class="check">✓</span> Todo lo del plan Autónomo</li>
+            <li><span class="check">✓</span> Módulo de Producción (Corte, Armado, Acabado)</li>
+            <li><span class="check">✓</span> Hasta 5 maestros carpinteros asociados</li>
+            <li><span class="check">✓</span> Reportes económicos y saldos en Bs</li>
+            <li><span class="check">✓</span> Notificaciones automáticas a clientes</li>
+            <li><span class="check">✓</span> Exportación a PDF para clientes</li>
+          </ul>
+
+          <button onclick="openPlayStoreModal()" class="btn-pricing-action">Instalar Taller Pro en Play Store</button>
+        </div>
+
+        <!-- Plan 3: Fábrica / Múltiples Talleres -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">Fábrica</h3>
+            <p class="plan-desc">Para empresas de mobiliario y plantas de producción a gran escala.</p>
+          </div>
+
+          <div class="plan-price-wrap">
+            <span class="plan-price-currency">Bs</span>
+            <span class="plan-price-amount">349</span>
+            <span class="plan-price-period">/ mes</span>
+          </div>
+
+          <ul class="plan-features-list">
+            <li><span class="check">✓</span> Operarios y maestros ilimitados</li>
+            <li><span class="check">✓</span> Múltiples sucursales / talleres</li>
+            <li><span class="check">✓</span> Control de inventario de melaminas</li>
+            <li><span class="check">✓</span> Personalización con logo propio</li>
+            <li><span class="check">✓</span> Capacitación presencial o virtual</li>
+          </ul>
+
+          <a href="#contacto" class="btn-pricing-action">Contactar Asesor por WhatsApp</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: CONTACTO & GENERADOR DE CONSULTA POR WHATSAPP
+       ========================================================================== -->
+  <section class="section-contact-promo" id="contacto">
+    <div class="container">
+
+      <div class="contact-layout-grid">
+
+        <!-- Bloque de Información de Contacto -->
+        <div class="contact-info-block">
+          <span class="section-tag-pill sage">Atención Personalizada</span>
+          <h2>¿Listo para modernizar tu taller con Carpintech?</h2>
+          <p>
+            Habla directamente con uno de nuestros asesores técnicos de carpintería. Te ayudamos a configurar tu cuenta,
+            crear tu primer mueble 3D y poner a punto a tu equipo de trabajo.
+          </p>
+
+          <div class="contact-channel-cards">
+
+            <a href="https://wa.me/59175136136?text=Hola%20Carpintech,%20quisiera%20solicitar%20información%20y%20probar%20la%20app"
+              target="_blank" class="channel-card-item">
+              <div class="channel-icon-pill whatsapp">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                </svg>
+              </div>
+              <div class="channel-detail">
+                <h4>WhatsApp de Asesoría Directa</h4>
+                <p>+591 75136136 • Respuesta en menos de 10 min</p>
+              </div>
+            </a>
+
+            <div class="channel-card-item">
+              <div class="channel-icon-pill">📍</div>
+              <div class="channel-detail">
+                <h4>Cobertura Nacional</h4>
+                <p>La Paz / El Alto, Cochabamba, Santa Cruz y toda la región</p>
+              </div>
+            </div>
+
+            <div class="channel-card-item">
+              <div class="channel-icon-pill">⏰</div>
+              <div class="channel-detail">
+                <h4>Horarios de Soporte Técnico</h4>
+                <p>Lunes a Sábado: 07:30 - 20:00</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Formulario Rápido que abre WhatsApp con el Mensaje Construido -->
+        <div class="contact-form-card">
+          <h3>Solicita tu Acceso Demo</h3>
+          <p>Completa tus datos y te enviaremos el enlace de descarga oficial y una clave de prueba de 14 días.</p>
+
+          <form id="whatsappDirectForm">
+
+            <div class="form-group-item">
+              <label for="clientName">Tu Nombre o Apodo:</label>
+              <input type="text" id="clientName" class="form-input-pill" placeholder="Ej. Maestro Simei o Javier"
+                required>
+            </div>
+
+            <div class="form-group-item">
+              <label for="clientWorkshop">Nombre de tu Taller / Emprendimiento:</label>
+              <input type="text" id="clientWorkshop" class="form-input-pill"
+                placeholder="Ej. Muebles Oscarín / Carpintería El Roble" required>
+            </div>
+
+            <div class="form-group-item">
+              <label for="clientInterest">¿Qué función te interesa más?</label>
+              <select id="clientInterest" class="form-input-pill">
+                <option value="Modelador 3D con despiece exacto">Modelador 3D con despiece exacto</option>
+                <option value="Control de producción y operarios">Control de producción y operarios</option>
+                <option value="Cotizaciones y cobranzas de pedidos en Bs">Cotizaciones y cobranzas de pedidos en Bs
+                </option>
+                <option value="Promoción completa de lanzamiento con 50% OFF">Promoción completa de lanzamiento con 50%
+                  OFF</option>
+              </select>
+            </div>
+
+            <div class="form-group-item">
+              <label for="clientNote">Comentario o Duda adicional (opcional):</label>
+              <textarea id="clientNote" rows="3" class="form-textarea-pill"
+                placeholder="¿Trabajas con melamina, madera maciza, o ambas?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-whatsapp-submit">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+              <span>Enviar Consulta por WhatsApp</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: PREGUNTAS FRECUENTES (FAQ ACCORDION)
+       ========================================================================== -->
+  <section class="section-faq">
+    <div class="container">
+
+      <div class="section-title-center">
+        <span class="section-tag-pill sage">Resolvemos tus Dudas</span>
+        <h2 class="editorial-title-chunky" style="font-size:clamp(1.9rem, 3.2vw, 2.6rem);">
+          Preguntas Frecuentes de Carpinteros
+        </h2>
+      </div>
+
+      <div class="faq-accordion-list">
+
+        <div class="faq-accordion-item open">
+          <div class="faq-accordion-header">
+            <h4>¿Necesito una computadora costosa para usar Carpintech?</h4>
+            <span class="faq-accordion-icon">+</span>
+          </div>
+          <div class="faq-accordion-body">
+            No. Carpintech fue especialmente desarrollado para funcionar fluido en cualquier smartphone o tablet con
+            Android o iOS. Puedes diseñar, editar piezas y revisar estados directamente parado en tu taller o visitando
+            a tu cliente.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <h4>¿Cómo ayuda el modelador 3D a evitar errores de corte?</h4>
+            <span class="faq-accordion-icon">+</span>
+          </div>
+          <div class="faq-accordion-body">
+            Cada mueble modelado calcula automáticamente el despiece con las dimensiones exactas de cada pieza (largo,
+            ancho, espesor y tapacantos). Esto elimina las equivocaciones de cálculo manual y optimiza el uso de
+            tableros de melamina.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <h4>¿Pueden mis operarios y maestros carpinteros ver los pedidos?</h4>
+            <span class="faq-accordion-icon">+</span>
+          </div>
+          <div class="faq-accordion-body">
+            Sí. En el módulo de producción asignas el mueble a un maestro de tu equipo. El operario puede abrir la vista
+            3D desde su propio celular para ver cómo va ensamblada cada pieza y cambiar el estado de Corte a Armado y
+            Acabado.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <h4>¿Cómo funciona la prueba gratuita de 14 días?</h4>
+            <span class="faq-accordion-icon">+</span>
+          </div>
+          <div class="faq-accordion-body">
+            Te registras sin ingresar tarjetas ni compromisos. Recibes acceso total a todas las herramientas durante 14
+            días para que puedas probarla con tus proyectos reales de carpintería.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="footer-top-grid">
+
+        <div class="footer-brand">
+          <div class="brand-logo-wrap" style="margin-bottom:16px;">
+            <img src="./assets/logo-carpintech.jpeg" alt="Carpintech Logo" class="brand-official-logo">
+            <div class="brand-text-block">
+              <span class="brand-name-text" style="color:#fff;">carpintech</span>
+              <span class="brand-slogan-text" style="color:var(--caramel-accent);">Diseña • Visualiza • Fabrica</span>
+            </div>
+          </div>
+          <p>
+            El software y modelador 3D pensado para transformar talleres de carpintería y fabricación de muebles en
+            negocios altamente rentables.
+          </p>
+          <p style="margin-top:10px; color:var(--caramel-accent); font-weight:700;">
+            Diseña • Visualiza • Fabrica
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+            <li><a href="#pantallas-app">Pantallas de la App</a></li>
+            <li><a href="#simulador-3d">Simulador 3D</a></li>
+            <li><a href="#planes">Planes & Precios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Módulos Clave</h4>
+          <ul class="footer-links-list">
+            <li><a href="#pantallas-app">Modelador 3D Táctil</a></li>
+            <li><a href="#pantallas-app">Despiece Automático</a></li>
+            <li><a href="#pantallas-app">Control de Producción</a></li>
+            <li><a href="#pantallas-app">Gestión de Cobranzas en Bs</a></li>
+            <li><a href="#pantallas-app">Clientes & WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Contacto & Soporte</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://wa.me/59175136136" target="_blank">WhatsApp Directo: +591 75136136</a></li>
+            <li><a href="mailto:soporte@carpintech3d.com">soporte@carpintech3d.com</a></li>
+            <li><a href="#contacto">Taller Demostración</a></li>
+            <li><a href="#contacto">La Paz / El Alto, Bolivia</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Carpintech 3D. Todos los derechos reservados.</span>
+
+        <div class="google-play-badge-wrap" onclick="openPlayStoreModal()">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1z" fill="#00E676" />
+            <path d="M16.9 15.5l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.3l-3.9 2.2-.1-.1z" fill="#FFD600" />
+            <path d="M13.6 12L3.6 22.1c.4.4 1 .4 1.7 0l11.7-6.6-3.4-3.5z" fill="#FF3D00" />
+            <path d="M13.6 12L17 8.5 5.3 1.9C4.6 1.5 4 1.5 3.6 1.9L13.6 12z" fill="#00B0FF" />
+          </svg>
+          <div style="text-align:left; line-height:1.1;">
+            <div style="font-size:0.65rem; color:#aaa; text-transform:uppercase;">DISPONIBLE EN</div>
+            <div style="font-size:0.85rem; font-weight:800; color:#fff;">Google Play Store</div>
+          </div>
+        </div>
+
+        <span>Tecnología creada para la comunidad de carpinteros y ebanistas.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp para Contacto Inmediato -->
+  <a href="https://wa.me/59175136136?text=Hola%20Carpintech,%20vi%20la%20página%20publicitaria%20y%20quiero%20probar%20la%20app%20en%20mi%20taller"
+    target="_blank" class="floating-whatsapp-btn" title="Escríbenos por WhatsApp" aria-label="Contactar por WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+    </svg>
+  </a>
+
+  <!-- Modal de Descarga Simulada en Google Play Store -->
+  <div id="playStoreModal" class="playstore-modal-overlay">
+    <div class="playstore-card-modal">
+      <button class="modal-close-cross" onclick="closePlayStoreModal()">&times;</button>
+
+      <div class="modal-header-play">
+        <div class="app-icon-store">
+          <img src="./assets/logo-carpintech.jpeg" alt="Carpintech 3D Icon">
+        </div>
+        <div class="app-store-info">
+          <h3>Carpintech 3D</h3>
+          <div class="developer">Carpintech Atelier Tech</div>
+          <div class="tags">Diseño y Fabricación • Contiene herramientas 3D</div>
+        </div>
+      </div>
+
+      <div class="app-store-stats-row">
+        <div class="store-stat-col">
+          <div class="val">4.9 ★</div>
+          <div class="lbl">2.4 mil opiniones</div>
+        </div>
+        <div class="store-stat-col">
+          <div class="val">28 MB</div>
+          <div class="lbl">Tamaño</div>
+        </div>
+        <div class="store-stat-col">
+          <div class="val">+10 K</div>
+          <div class="lbl">Descargas</div>
+        </div>
+      </div>
+
+      <div class="modal-body-play">
+        <p>
+          Modelador tridimensional, cálculo automático de despiece y gestión integral de pedidos y cobranzas para
+          carpinterías y talleres de melamina.
+        </p>
+
+        <!-- Barra de progreso simulada -->
+        <div id="downloadSimBar" class="download-sim-bar">
+          <div id="downloadSimFill" class="download-sim-fill"></div>
+        </div>
+        <div id="downloadStatusTxt" class="download-status-txt">
+          Descargando Carpintech 3D...
+        </div>
+
+        <button id="btnPlayInstall" class="btn-play-install-main" onclick="simulateInstallApp()">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+          </svg>
+          <span id="installBtnText">Instalar en tu Celular (Play Store)</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
